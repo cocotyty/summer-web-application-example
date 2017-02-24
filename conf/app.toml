@@ -1,0 +1,10 @@
+[web]
+listen=":8080"
+
+[databases]
+[databases.main]
+driver = "mysql"
+address = "root:123456@tcp(127.0.0.1:3306)/demo?parseTime=true&loc=Local"
+maxOpenConn=1
+maxIdleConn=1
+maxLifetime=300
