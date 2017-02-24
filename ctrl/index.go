@@ -15,7 +15,7 @@ type Index struct {
 	User *dao.User `sm:"*"`
 }
 
-func (i *Index) Page(ctx *gin.Context) {
+func (i *Index) ListUser(ctx *gin.Context) {
 	users, err := i.User.List()
 	if err != nil {
 		ctx.JSON(500, err)

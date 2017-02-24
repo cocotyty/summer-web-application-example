@@ -30,7 +30,7 @@ func (conf *WebConf) Init() {
 func (conf *WebConf) routes() {
 	g := conf.gin
 	// config web
-	g.GET("/", conf.Index.Page)
+	g.GET("/", conf.Index.ListUser)
 	g.GET("/time", conf.Index.Time)
 }
 
